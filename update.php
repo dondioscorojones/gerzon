@@ -157,7 +157,13 @@ if (isset($_GET['id'])) {
                                 class="form-control" 
                                 name="allowance"
                                 id="allowance"
-                                value="<?php echo $update_row['allowance']-1; ?>">
+                                value="<?php 
+                                // if ($update_row['user_type'] === 'student') {
+                                //     echo $update_row['allowance']-1;
+                                // }else {
+                                    echo $update_row['allowance'];
+                                // }
+                                ?>">
                     </div>
                 </div>
 
